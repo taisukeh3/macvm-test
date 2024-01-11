@@ -1,14 +1,14 @@
 jobs:
   build:
     runs-on: macos-latest
-     steps:
-      - name: Mount list
-        run:  mount
-      - name: Run tests
-        run: diskutil list
-      - name: Print0
-        run: uname -a
-      - name: Print firmlinks
-        run: cat /usr/share/firmlinks
-      - name: Print synthetic
-        run: cat /etc/synthetic.conf || true
+    steps:
+     - name: Mount list
+       run:  mount
+     - name: Run tests
+       run: diskutil list
+     - name: Print0
+       run: uname -a
+     - name: Print firmlinks
+       run: cat /usr/share/firmlinks
+     - name: Print synthetic
+       run: cat /etc/synthetic.conf || true
