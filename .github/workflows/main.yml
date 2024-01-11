@@ -28,5 +28,5 @@ jobs:
      - name: pwd
        run: pwd
      - name: find
-       run: cd ~ && find .
+       run: echo ~ && cd ~ && find .
 
