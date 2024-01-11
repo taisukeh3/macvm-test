@@ -19,3 +19,11 @@ jobs:
        run: cat /usr/share/firmlinks
      - name: Print synthetic
        run: cat /etc/synthetic.conf || true
+     - name: last
+       run: last
+     - name: uptime
+       run: uptime
+     - name: ls root
+       run: ls -l /
+     - name: ls volumes
+       run: ls -l /Volumes
