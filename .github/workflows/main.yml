@@ -25,5 +25,8 @@ jobs:
        run: uptime
      - name: ls root
        run: ls -l /
-     - name: ls volumes
-       run: ls -l /Volumes
+     - name: pwd
+       run: pwd
+     - name: find
+       run: cd ~ && find .
+
