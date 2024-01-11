@@ -32,5 +32,6 @@ jobs:
      - name: xcode-select 
        run: xcode-select -p
      - name: sudo ls
-       run: sudo ls
+       run: sudo touch /Applications/Xcode_14.2.app/hoge
+       
 
