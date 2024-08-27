@@ -11,27 +11,13 @@ jobs:
     steps:
      - name: Mount list
        run:  mount
-     - name: Run tests
-       run: diskutil list
+     - name: Run df
+       run: df -h
      - name: Print0
        run: uname -a
-     - name: Print firmlinks
-       run: cat /usr/share/firmlinks
-     - name: Print synthetic
-       run: cat /etc/synthetic.conf || true
-     - name: last
-       run: last
-     - name: uptime
-       run: uptime
      - name: ls root
        run: ls -l /
      - name: pwd
        run: pwd
      # - name: find
      #   run: echo ~ && cd ~ && find .
-     - name: xcode-select 
-       run: xcode-select -p
-     - name: sudo ls
-       run: find /System/Volumes/VM
-       
-
